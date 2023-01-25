@@ -14,7 +14,7 @@ export const posts = [
         location: "Zundert, Netherlands",
         avatar: "images/avatar-vangogh.jpg",
         post: "images/post-vangogh.jpg",
-        comment: "just took a few mushrooms lol",
+        comment: "selfie",
         likes: "21,492"
     },
     {
