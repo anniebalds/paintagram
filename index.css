@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'Billabong';
+    src: url('Billabong.ttf') format('truetype')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: white;
+    color: rgb(38, 38, 38)
+}
+
+.left-side {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    padding-right: 90px;
+    padding-left: 20px;
+    border-right: 1px solid rgb(207, 207, 207);
+}
+
+.left-side-items {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side-flex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1 {
+    font-family: 'Billabong';
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 1.4em 0 0 0.4em
+}
+
+.left-side ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em
+}
+
+.left-side ul li {
+    display: flex
+}
+
+.left-side li, .more-btn {
+    list-style: none;
+    font-size: 17px;
+    width: 9em;
+    padding: 0.8em;
+    padding-right: 1.5em
+}
+
+.left-side li:hover, .more-btn:hover {
+    background-color: rgb(246, 246, 246);
+    border-radius: 30px;
+}
+
+.more-btn {
+    margin-bottom: 1em;
+    display: flex
+}
+
+.left-side i {
+    margin-right: 1em;
+    font-size: 1.4rem
+}
+
+.profile-pic {
+    width: 1.5em;
+    border-radius: 50%;
+    margin-right: 1em
+}
+
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.middle-section {
+    background-color: white;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stories {
+    display: flex;
+    width: 32em;
+    overflow: scroll;
+    gap: 0.6em
+}
+
+.stories img {
+    cursor: pointer;
+}
+
+.feed {
+    width: 32em;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+}
+
+.post {
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    font-size: 0.9rem
+
+}
+
+.post .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-left: 5px
+}
+
+.post .avatar {
+    width: 32px;
+    border-radius: 50%;
+}
+
+.username, .my-username {
+    font-weight: 600;
+}
+
+.location, .my-name {
+    font-size: 0.9rem
+}
+
+.post .img {
+    width: 100%;
+}
+
+.control-bar i {
+    font-size: 24px;
+    margin-right: 0.5em
+}
+
+.name-locay {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.container {
+    margin-top: 1em;
+    width: 32em;
+}
+
+.left-side-flex li, .more-btn, .avatar, .username, .control-bar i, .right-side-action, .right-side-links li {
+    cursor: pointer;
+}
+
+.control-bar i:hover {
+    color: gray
+}
+
+.main-area {
+    display: flex;
+    justify-content: space-around;
+    gap: 4em;
+    margin-left: 14em
+}
+
+.right-side {
+    margin-top: 2em;
+    width: 19em;
+}
+
+.my-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-info {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 0.9rem
+}
+
+.my-pic {
+    width: 65px;
+    border-radius: 50%;
+    margin-top: 0.2em
+}
+
+.my-names {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em
+}
+
+.my-name {
+    color: rgb(155, 153, 153);
+    font-weight: light;
+}
+
+.right-side-action {
+    color: rgb(50, 163, 250);
+    font-weight: bold;
+    font-size: 0.85rem
+}
+
+.right-side-action:hover {
+    color: rgb(14, 59, 92);
+}
+
+.suggestions {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5em 0
+}
+
+.suggestions .right-side-action {
+    color: black
+}
+
+.suggestions .right-side-action:hover {
+    color: rgb(155, 153, 153);
+}
+
+.suggestions-text {
+    color: rgb(155, 153, 153);
+    font-size: 0.9rem;
+    font-weight: bold
+}
+
+.right-side-links li, .right-side > p {
+    display: inline;
+    color: rgb(195, 192, 192);
+    font-weight: lighter;
+    font-size: 0.8rem
+}
+
+.right-side-links li:hover {
+    text-decoration: underline;
+}
+
+.right-side-links {
+    margin-bottom: 1.5em
+}
+
+
+
+
+@media (max-width: 768px) {
+    .left-side li p, .more-btn p {
+        display: none
+    }
+}
